@@ -39,6 +39,10 @@
       </div>
       <div class="one column"></div>
     </div>
+
+    <!-- Sección para comentarios -->
+    <div id="comments-section" class="comments-section"></div>
+
     <FooterView />
   </div>
 </template>
@@ -73,8 +77,23 @@ export default {
     // Generar la ruta de la imagen del director en base al slug
     getDirectorImage(slug) {
       return `/images/${slug}.png`;
+    },
+  },
+  mounted() {
+    // Verifica que el script no se cargue dos veces
+    if (
+      !document.querySelector('script[src="https://utteranc.es/client.js"]')
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "TefaV/Tarea2");
+      script.setAttribute("issue-term", "pathname");
+      script.setAttribute("theme", "github-dark");
+      script.setAttribute("crossorigin", "anonymous");
+      script.async = true;
+      document.getElementById("comments-section").appendChild(script);
     }
-  }
+  },
 };
 </script>
 
@@ -85,7 +104,7 @@ export default {
   background-color: #0d0d0d;
   color: #e0e0e0;
   min-height: 100vh;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
 }
 
 /* Imagen del director */

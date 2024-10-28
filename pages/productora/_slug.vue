@@ -34,6 +34,10 @@
       </div>
       <div class="two columns"></div>
     </div>
+
+    <!-- Sección de comentarios -->
+    <div id="comments-section" class="comments-section"></div>
+
     <FooterView />
   </div>
 </template>
@@ -65,11 +69,23 @@ export default {
   methods: {
     // Generar la ruta de la imagen de la productora en base al slug
     getProductoraImage(slug) {
-      
       return `/images/${slug}.png`;
     }
+  },
+  mounted() {
+    // Verifica que el script no se cargue dos veces
+    if (!document.querySelector('script[src="https://utteranc.es/client.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "TefaV/Tarea2");
+      script.setAttribute("issue-term", "pathname");
+      script.setAttribute("theme", "github-dark");
+      script.setAttribute("crossorigin", "anonymous");
+      script.async = true;
+      document.getElementById("comments-section").appendChild(script);
+    }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -167,5 +183,4 @@ header,
 footer {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 }
-
-/* Añadir un efecto de parpadeo tenue a los
+</style>
