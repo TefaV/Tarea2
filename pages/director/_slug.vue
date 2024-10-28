@@ -86,7 +86,7 @@ export default {
     ) {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "TefaV/Tarea2");
+      script.setAttribute("repo", "TefaV/Tarea2");   
       script.setAttribute("issue-term", "pathname");
       script.setAttribute("theme", "github-dark");
       script.setAttribute("crossorigin", "anonymous");

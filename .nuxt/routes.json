@@ -3,42 +3,36 @@
     "name": "directores",
     "path": "/directores",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\directores.vue",
-    "chunkName": "pages/directores",
-    "_name": "_3e49b8f0"
+    "chunkName": "pages/directores"
   },
   {
     "name": "productoras",
     "path": "/productoras",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\productoras.vue",
-    "chunkName": "pages/productoras",
-    "_name": "_6053d8fe"
+    "chunkName": "pages/productoras"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5300c18c"
+    "chunkName": "pages/index"
   },
   {
     "name": "director-slug",
     "path": "/director/:slug?",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\director\\\\_slug.vue",
-    "chunkName": "pages/director/_slug",
-    "_name": "_1c5e3f38"
+    "chunkName": "pages/director/_slug"
   },
   {
     "name": "peliculas-slug",
     "path": "/peliculas/:slug?",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\peliculas\\\\_slug.vue",
-    "chunkName": "pages/peliculas/_slug",
-    "_name": "_244f4ff4"
+    "chunkName": "pages/peliculas/_slug"
   },
   {
     "name": "productora-slug",
     "path": "/productora/:slug?",
     "component": "C:\\\\Users\\\\vstep\\\\Desktop\\\\Tarea2\\\\pages\\\\productora\\\\_slug.vue",
-    "chunkName": "pages/productora/_slug",
-    "_name": "_12194a56"
+    "chunkName": "pages/productora/_slug"
   }
 ]
